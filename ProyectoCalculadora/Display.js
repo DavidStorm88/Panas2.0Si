@@ -26,4 +26,12 @@ class Display {
     this.tipoOperacion = undefined;
     this.imprimirValores();
   }
+
+  computar(tipo) {
+    this.tipoOperacion !== "igual" && this.calcular();
+    this.tipoOperacion = tipo;
+    this.valorAnterior = this.valorActual || this.valorAnterior;
+    this.valorActual = "";
+    this.imprimirValores();
+  }
 }
