@@ -34,4 +34,10 @@ class Display {
     this.valorActual = "";
     this.imprimirValores();
   }
+  //Añadimos el metodo para agregar numeros
+  agregarNumero(numero) {
+    if (numero === "." && this.valorActual.includes(".")) return;
+    this.valorActual = this.valorActual.toString() + numero.toString();
+    this.imprimirValores();
+  }
 }
