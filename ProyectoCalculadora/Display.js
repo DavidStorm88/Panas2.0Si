@@ -8,10 +8,10 @@ class Display {
     this.valorActual = "";
     this.valorAnterior = "";
     this.signos = {
-      sumar: "+",
+      suma: "+",
       dividir: "%",
       multiplicar: "x",
-      restar: "-",
+      resta: "-",
     };
   }
   //definir el metodo para borrar
