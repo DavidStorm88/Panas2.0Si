@@ -14,4 +14,16 @@ class Display {
       restar: "-",
     };
   }
+  //definir el metodo para borrar
+  borrar() {
+    this.valorActual = this.valorActual.toString().slice(0, -1);
+    this.imprimirValores();
+  }
+
+  borrarTodo() {
+    this.valorActual = "";
+    this.valorAnterior = "";
+    this.tipoOperacion = undefined;
+    this.imprimirValores();
+  }
 }
